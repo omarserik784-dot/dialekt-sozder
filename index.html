@@ -1,0 +1,713 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Диалект сөздер | Қазақ тілі</title>
+
+<style>
+:root {
+  --bg: #f3f6fc;
+  --ink: #17243a;
+  --blue: #2458a6;
+  --green: #168565;
+  --orange: #bc7919;
+  --purple: #7954b5;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+header {
+  padding: 54px 18px 42px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(
+    130deg, #142e52, #2769b7 70%, #5494df
+  );
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 13px;
+  border: 1px solid #ffffff80;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: clamp(34px, 7vw, 56px);
+  margin: 12px 0;
+  line-height: 1.15;
+}
+
+header p {
+  max-width: 720px;
+  margin: 12px auto 0;
+  color: #e9f2ff;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px;
+  background: white;
+  box-shadow: 0 3px 15px #152d5012;
+}
+
+nav a {
+  padding: 8px 12px;
+  border-radius: 9px;
+  color: #234879;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  background: #e8f0ff;
+}
+
+main {
+  max-width: 1020px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  margin: 18px 0;
+  box-shadow: 0 7px 24px #17375e0b;
+}
+
+.intro { border-left: 5px solid var(--blue); }
+.section1 { border-top: 5px solid var(--blue); }
+.section2 { border-top: 5px solid var(--green); }
+.section3 { border-top: 5px solid var(--orange); }
+.extra { border-top: 5px solid var(--purple); }
+
+h2 {
+  margin: 0 0 12px;
+  font-size: clamp(22px, 4vw, 29px);
+  line-height: 1.3;
+}
+
+h3 {
+  margin: 0 0 7px;
+  font-size: 18px;
+}
+
+.kicker {
+  display: inline-block;
+  background: #e8f0ff;
+  color: #244f94;
+  padding: 4px 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(210px, 1fr)
+  );
+  gap: 13px;
+  margin-top: 16px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 14px;
+  background: #f2f6ff;
+  border: 1px solid #e6edfa;
+}
+
+.card p {
+  margin: 6px 0 0;
+  color: #5d6b80;
+  font-size: 14px;
+}
+
+.word {
+  font-size: 19px;
+  font-weight: bold;
+  color: #214f93;
+}
+
+.green .word { color: #087354; }
+.orange .word { color: #945b0b; }
+.purple .word { color: #6943a5; }
+
+.note {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #e0f7ec;
+}
+
+.warn { background: #fff1cc; }
+.violet { background: #f0eaff; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 14px;
+  background: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 11px;
+  border-bottom: 1px solid #e3e9f2;
+  vertical-align: top;
+}
+
+th { background: #edf3ff; }
+
+.quiz {
+  background: #172f52;
+  color: white;
+}
+
+.quiz button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 9px 0;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: white;
+  color: #17243a;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.quiz button:hover { background: #dce9ff; }
+
+#feedback, #q0, #q1, #q2 {
+  min-height: 25px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.action {
+  background: #2458a6;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action:hover { background: #183f7a; }
+
+footer {
+  text-align: center;
+  padding: 28px 16px;
+  color: #607086;
+}
+
+small { color: #5d6b80; }
+
+@media (max-width: 560px) {
+  .panel { padding: 18px; }
+  nav { position: static; }
+  th, td { padding: 8px; font-size: 14px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <span class="tag">Қазақ тілі • Танымдық сайт</span>
+  <h1>Диалект сөздер</h1>
+  <p>
+    Қазақ тіліндегі жергілікті сөздер,
+    олардың әдеби тілдегі баламалары және
+    сөз қолданысының ерекшеліктері.
+  </p>
+</header>
+
+<nav>
+  <a href="#about">Түсінік</a>
+  <a href="#one">1. Баламасы бар</a>
+  <a href="#two">2. Баламасы жоқ</a>
+  <a href="#three">3. Әдеби тілге енген</a>
+  <a href="#practice">Мысалдар</a>
+  <a href="#quiz">Тест</a>
+</nav>
+
+<main>
+
+<!-- КІРІСПЕ -->
+
+<section class="panel intro" id="about">
+  <span class="kicker">Негізгі ұғым</span>
+  <h2>Диалект сөз дегеніміз не?</h2>
+
+  <p>
+    <b>Диалект сөздер</b> — белгілі бір аймақтың
+    тұрғындары қолданатын жергілікті тілдік
+    ерекшеліктер. Олар күнделікті тұрмысқа,
+    тағамға, киімге, табиғатқа немесе кәсіпке
+    қатысты болуы мүмкін.
+  </p>
+
+  <p>
+    Диалект сөздің әдеби тілдегі баламасы болуы
+    да, болмауы да мүмкін. Бір сөздің мағынасы
+    мен таралу аймағын анықтағанда сөздікке
+    және нақты тілдік дерекке сүйенген дұрыс.
+  </p>
+
+  <div class="note warn">
+    <b>Ескерту:</b> сөздердің мағынасы мен
+    қолданылуы өңірге қарай өзгеруі мүмкін.
+    Мысалдарды мектеп оқулығымен немесе
+    диалектологиялық сөздікпен салыстыр.
+  </div>
+</section>
+
+<!-- 1-БӨЛІМ -->
+
+<section class="panel section1" id="one">
+  <span class="kicker">1-бөлім</span>
+
+  <h2>Әдеби тілде баламасы бар диалект сөздер</h2>
+
+  <p>
+    Бұл сөздердің кейбір өңірлерде қолданылатын
+    атауы бар, ал әдеби тілде сол мағынаны
+    білдіретін басқа сөз қолданылады.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="word">Нән</div>
+      <p>Әдеби тілдегі баламасы: <b>үлкен, зор</b>.</p>
+    </div>
+
+    <div class="card">
+      <div class="word">Сым</div>
+      <p>Кей өңірлік қолданыста: <b>шалбар</b>.</p>
+    </div>
+
+    <div class="card">
+      <div class="word">Бәдірен</div>
+      <p>Кей өңірлік қолданыста: <b>қияр</b>.</p>
+    </div>
+
+    <div class="card">
+      <div class="word">Жүдә</div>
+      <p>Кей өңірлерде: <b>өте, тым</b> мағынасында.</p>
+    </div>
+
+    <div class="card">
+      <div class="word">Пиялай</div>
+      <p>Кей жерлерде: <b>кішкене кесе</b> мағынасында.</p>
+    </div>
+
+    <div class="card">
+      <div class="word">Шекер</div>
+      <p>
+        Қант мағынасында қолданылатын атау.
+        Әдеби тілде де кездеседі.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <b>Мысал:</b> «Біздің жақта бәдірен дейді,
+    ал әдеби тілде қияр деп айтады».
+  </div>
+</section>
+
+<!-- 2-БӨЛІМ -->
+
+<section class="panel section2" id="two">
+  <span class="kicker">2-бөлім</span>
+
+  <h2>
+    Әдеби тілде дәл баламасы жоқ жергілікті сөздер
+  </h2>
+
+  <p>
+    Бұл топқа белгілі бір өңірге, кәсіпке,
+    тұрмысқа немесе дәстүрге қатысты атаулар
+    кіруі мүмкін. Сөздің әдеби тілде баламасы
+    мүлде жоқ екенін сөздік дерегімен тексеру керек.
+  </p>
+
+  <div class="cards green">
+
+    <div class="card">
+      <div class="word">Тұрмыстық атаулар</div>
+      <p>
+        Өңірде қолданылатын үй бұйымдары мен
+        күнделікті заттардың атаулары.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="word">Кәсіпке қатысты сөздер</div>
+      <p>
+        Мал шаруашылығы, балық аулау,
+        егіншілік немесе қолөнерге тән атаулар.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="word">Табиғатқа қатысты сөздер</div>
+      <p>
+        Жер бедері, жел, өсімдік немесе табиғи
+        құбылыстардың жергілікті атаулары.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="word">Дәстүрге қатысты сөздер</div>
+      <p>
+        Белгілі бір өңірдің салты мен тұрмысын
+        сипаттайтын атаулар.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <b>Зерттеу үлгісі:</b>
+    сөзді жаз → қай өңірде айтылатынын белгіле
+    → мағынасын түсіндір → сөздіктен тексер.
+  </div>
+</section>
+
+<!-- 3-БӨЛІМ -->
+
+<section class="panel section3" id="three">
+  <span class="kicker">3-бөлім</span>
+
+  <h2>Әдеби тілде орныққан сөздер</h2>
+
+  <p>
+    Кейбір сөздер уақыт өте кең таралуы мүмкін.
+    Бірақ кең таралған сөздің бәрін диалект
+    сөзден шыққан деп есептеуге болмайды.
+    Оның тарихын тілдік дерекпен растау қажет.
+  </p>
+
+  <div class="cards orange">
+
+    <div class="card">
+      <div class="word">Кең қолданыс</div>
+      <p>
+        Сөз әртүрлі өңірде түсінікті болып,
+        күнделікті сөйлеуде жиі қолданылуы мүмкін.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="word">Әдеби норма</div>
+      <p>
+        Сөздің әдеби тіл нормасына жататынын
+        түсіндірме және орфографиялық сөздіктерден
+        тексеруге болады.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="word">Тілдік өзгеріс</div>
+      <p>
+        Сөздердің мағынасы мен қолданылу аясы
+        уақыт өте өзгеруі мүмкін.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note warn">
+    Нақты сөзді «диалект сөзден әдеби тілге енген»
+    деп көрсету үшін оның тарихын растайтын
+    сенімді дерек қажет.
+  </div>
+</section>
+
+<!-- ҚОСЫМША МЫСАЛДАР -->
+
+<section class="panel extra" id="practice">
+  <span class="kicker">Қосымша бөлім</span>
+
+  <h2>Салыстыруға арналған кесте</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Жергілікті қолданыс</th>
+        <th>Әдеби тілдегі баламасы</th>
+        <th>Ескерту</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Нән</td>
+        <td>Үлкен, зор</td>
+        <td>Өңірлік қолданыс ретінде кездеседі.</td>
+      </tr>
+
+      <tr>
+        <td>Сым</td>
+        <td>Шалбар</td>
+        <td>Мағынасы сөйлеу ортасына байланысты.</td>
+      </tr>
+
+      <tr>
+        <td>Бәдірен</td>
+        <td>Қияр</td>
+        <td>Кей өңірлерде қолданылады.</td>
+      </tr>
+
+      <tr>
+        <td>Жүдә</td>
+        <td>Өте, тым</td>
+        <td>Өңірлік сөйлеу ерекшелігі ретінде кездеседі.</td>
+      </tr>
+
+      <tr>
+        <td>Пиялай</td>
+        <td>Кішкене кесе</td>
+        <td>Қолданысын сөздікпен тексерген дұрыс.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:22px">Өз мысалыңды қос</h3>
+
+  <p>
+    Өзің білетін жергілікті сөзді енгізіп,
+    кестеге қосуға болады.
+  </p>
+
+  <label for="localWord">Жергілікті сөз</label>
+
+  <input
+    id="localWord"
+    placeholder="Мысалы: нән"
+    style="width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:9px;font:inherit"
+  >
+
+  <label for="literaryWord">
+    Әдеби тілдегі баламасы немесе түсіндірмесі
+  </label>
+
+  <input
+    id="literaryWord"
+    placeholder="Мысалы: үлкен"
+    style="width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:9px;font:inherit;margin:8px 0 12px"
+  >
+
+  <button class="action" onclick="addWord()">
+    Кестеге қосу
+  </button>
+
+  <p id="addFeedback" aria-live="polite"></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Сен қосқан сөз</th>
+        <th>Баламасы немесе түсіндірмесі</th>
+      </tr>
+    </thead>
+
+    <tbody id="customWords">
+      <tr>
+        <td colspan="2">
+          <small>Әзірге өз сөзіңді қосқан жоқсың.</small>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ИНТЕРАКТИВТІ ТЕСТ -->
+
+<section class="panel quiz" id="quiz">
+  <span class="kicker">Интерактивті тест</span>
+
+  <h2>Біліміңді тексер</h2>
+
+  <p>
+    <b>1.</b> «Бәдірен» сөзі кей өңірлерде
+    қандай мағынада қолданылады?
+  </p>
+
+  <button onclick="answer(0, false)">
+    A) Қызанақ
+  </button>
+
+  <button onclick="answer(0, true)">
+    Ә) Қияр
+  </button>
+
+  <button onclick="answer(0, false)">
+    Б) Сәбіз
+  </button>
+
+  <p id="q0" aria-live="polite"></p>
+
+  <hr>
+
+  <p><b>2.</b> Диалект сөз дегеніміз не?</p>
+
+  <button onclick="answer(1, true)">
+    A) Белгілі бір өңірде қолданылатын сөз
+  </button>
+
+  <button onclick="answer(1, false)">
+    Ә) Тек ғылыми термин
+  </button>
+
+  <button onclick="answer(1, false)">
+    Б) Тек басқа тілден енген сөз
+  </button>
+
+  <p id="q1" aria-live="polite"></p>
+
+  <hr>
+
+  <p>
+    <b>3.</b> Диалект сөздің мағынасын қалай
+    тексерген дұрыс?
+  </p>
+
+  <button onclick="answer(2, false)">
+    A) Кездейсоқ болжай салу
+  </button>
+
+  <button onclick="answer(2, true)">
+    Ә) Сөздік пен сенімді тілдік дерекке сүйену
+  </button>
+
+  <button onclick="answer(2, false)">
+    Б) Барлық өңірде бірдей мағына береді деп есептеу
+  </button>
+
+  <p id="q2" aria-live="polite"></p>
+
+  <p id="score" aria-live="polite">
+    <b>Нәтиже:</b> 0 / 3
+  </p>
+</section>
+
+</main>
+
+<footer>
+  Қазақ тілі бойынша оқу жобасы • Диалект сөздер
+</footer>
+
+<script>
+const results = [null, null, null];
+
+function answer(question, correct) {
+  results[question] = correct;
+
+  const messages = [
+    'Дұрыс! «Бәдірен» кей өңірлерде «қияр» деген мағынада қолданылады.',
+    'Дұрыс! Диалект сөз белгілі бір өңірдің тілдік ерекшелігін көрсетеді.',
+    'Дұрыс! Сөздік пен нақты тілдік дерекке сүйенген жөн.'
+  ];
+
+  const wrong = [
+    'Қайта көр. Дұрыс жауап: Ә) Қияр.',
+    'Қайта көр. Дұрыс жауап: A) Белгілі бір өңірде қолданылатын сөз.',
+    'Қайта көр. Дұрыс жауап: Ә) Сөздік пен сенімді тілдік дерекке сүйену.'
+  ];
+
+  const element = document.getElementById('q' + question);
+
+  element.textContent = correct
+    ? messages[question]
+    : wrong[question];
+
+  element.style.color = correct
+    ? '#a9f5cf'
+    : '#ffe2a3';
+
+  const score = results.filter(
+    value => value === true
+  ).length;
+
+  const answered = results.filter(
+    value => value !== null
+  ).length;
+
+  document.getElementById('score').innerHTML =
+    '<b>Нәтиже:</b> ' + score +
+    ' / 3 (жауап берілді: ' + answered + ' / 3)';
+}
+
+function addWord() {
+  const wordInput = document.getElementById('localWord');
+  const meaningInput = document.getElementById('literaryWord');
+
+  const word = wordInput.value.trim();
+  const meaning = meaningInput.value.trim();
+
+  const feedback = document.getElementById('addFeedback');
+  const tbody = document.getElementById('customWords');
+
+  if (!word || !meaning) {
+    feedback.textContent = 'Екі өрісті де толтыр.';
+    feedback.style.color = '#b42318';
+    return;
+  }
+
+  if (tbody.querySelector('td[colspan]')) {
+    tbody.innerHTML = '';
+  }
+
+  const row = document.createElement('tr');
+  const first = document.createElement('td');
+  const second = document.createElement('td');
+
+  first.textContent = word;
+  second.textContent = meaning;
+
+  row.append(first, second);
+  tbody.appendChild(row);
+
+  wordInput.value = '';
+  meaningInput.value = '';
+
+  feedback.textContent = 'Сөз кестеге қосылды!';
+  feedback.style.color = '#087354';
+}
+</script>
+
+</body>
+</html>
